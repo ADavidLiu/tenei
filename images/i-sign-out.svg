@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>sign out</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header-no-nav" transform="translate(-1152.000000, -63.000000)" fill="#7F8C8D">
+            <g id="Group-3" transform="translate(940.000000, 53.000000)">
+                <g id="Group" transform="translate(204.000000, 0.000000)">
+                    <g id="sign-out" transform="translate(8.000000, 10.000000)">
+                        <path d="M24.5136719,6.5 L24.5136719,12.5151978 L7.50970459,12.5151978 L7.50970459,6.5 L5.5,6.5 L5.5,13.0196358 C5.5,13.8370735 6.12071106,14.5 6.89039277,14.5 L25.1096072,14.5 C25.8785993,14.5 26.5,13.8378093 26.5,13.0196358 L26.5,6.5 L24.5136719,6.5 Z" id="Shape-Copy-2" fill-rule="nonzero" transform="translate(16.000000, 10.500000) rotate(-90.000000) translate(-16.000000, -10.500000) "></path>
+                        <path d="M7.71217089,11.1435668 L1.67769864,16.7331868 C1.29383331,17.0889377 0.671461489,17.0889377 0.287782521,16.7331868 C-0.0959275069,16.3777523 -0.0959275069,15.8012718 0.287782521,15.4458661 L5.62735883,10.4999065 L0.287937819,5.55411954 C-0.0957722091,5.19854121 -0.0957722091,4.62211822 0.287937819,4.26668374 C0.671647847,3.91110542 1.29398861,3.91110542 1.67785394,4.26668374 L7.71232619,9.85638999 C7.9041812,10.0341935 8,10.2669781 8,10.4998777 C8,10.7328924 7.90399484,10.9658496 7.71217089,11.1435668 Z" id="Shape" fill-rule="nonzero" transform="translate(4.000000, 10.500000) rotate(-540.000000) translate(-4.000000, -10.500000) "></path>
+                        <rect id="Rectangle" fill-rule="evenodd" transform="translate(7.000000, 10.500000) rotate(-270.000000) translate(-7.000000, -10.500000) " x="6" y="5" width="2" height="11" rx="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

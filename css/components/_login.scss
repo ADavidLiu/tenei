@@ -1,0 +1,142 @@
+.login {
+    padding: 1.333rem 15px 2.833rem 15px;
+    background-color: rgba($color-dark, .8);
+    @include atMedium {
+        padding: 3.125rem;
+        max-width: 56.25rem;
+        margin: 0 auto;
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include atMedium {
+            justify-content: flex-start;
+            margin-bottom: 4.375rem;
+        }
+
+        &-item {
+            text-align: center;
+            position: relative;
+
+            &-label {
+                cursor: pointer;
+                font-family: $font-bld;
+                letter-spacing: 1px;
+                color: rgba($color-white, .76);
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -7px;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-color: $color-primary;
+                transition: all .25s;
+                opacity: 0;
+                transform-origin: 50% 50%;
+                transform: scaleX(0);
+            }
+
+            & + & {
+                margin-left: 3.333rem;
+            }
+
+            &:hover,
+            &--active {
+                &:after {
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+        }
+
+        &--alt {
+            @include atMedium {
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+    &__form {
+        margin-top: 4rem;
+        margin-bottom: -1.333rem;
+        @include atMedium {
+            margin-top: 0;
+            margin-bottom: -1rem;
+        }
+
+        &-group {
+            margin-bottom: 1.333rem;
+            @include atMedium {
+                margin-bottom: 1rem;
+            }
+        }
+
+        &-footer {
+            @include atMedium {
+                margin-top: 1.875rem;
+            }
+        }
+
+        &-actions {
+            margin-top: 1.667rem;
+            @include atMedium {
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex: 1;
+            }
+
+            .checkbox {
+                @include atMedium {
+                    margin-right: 1.5rem;
+                }
+                @include atLarge {
+                    margin-right: 2.8125rem;
+                }
+
+                input {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &-btn {
+            text-align: center;
+            margin-top: 2.5rem;
+            @include atMedium {
+                margin-top: 0;
+            }
+        }
+
+        &-captcha {
+            & + * {
+                @include atMedium {
+                    margin-top: 1.25rem;
+                }
+                @include atLarge {
+                    margin-top: 4.75rem;
+                }
+            }
+        }
+
+        &--alt {
+            margin-top: 3rem;
+            margin-bottom: 0;
+            @include atMedium {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &--alt {
+        @include atLarge {
+            padding-bottom: 2.125rem;
+        }
+    }
+}

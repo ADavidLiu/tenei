@@ -1,0 +1,168 @@
+.connecting {
+    padding: 2.083rem 0 4.167rem 0;
+    @include atMedium {
+        text-align: center;
+        padding: 3.75rem 0 8.75rem 0;
+    }
+
+    &__intro {
+        text-align: center;
+    }
+
+    &__title {
+        color: rgba($color-primary, .76);
+        margin-bottom: 2rem;
+        @include atMedium {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__graphic {
+        text-align: center;
+
+        &-img {
+            margin: 3.333rem 0 4.167rem 0;
+            display: inline-block;
+            @include atMedium {
+                margin: 4rem 0 4.0625rem 0;
+                transform: translateX(1rem);
+            }
+        }
+    }
+
+    &__features {
+        position: relative;
+        text-align: left;
+        @include atMedium {
+            display: inline-flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        &-list {
+            list-style: none;
+            padding-left: 0;
+
+            & + & {
+                margin-top: 5.833rem;
+                @include atMedium {
+                    margin-top: 0;
+                    margin-left: 3.75rem;
+                }
+            }
+
+            &:first-child {
+                @include atMedium {
+                    text-align: right;
+                    position: relative;
+                }
+
+                &:before {
+                    @include atMedium {
+                        content: "";
+                        position: absolute;
+                        top: -1.125rem;
+                        right: 0;
+                        transform: translate(1.875rem, -100%);
+                        width: 1px;
+                        height: 7rem;
+                        background-color: $color-gray;
+                    }
+                }
+
+                &:after {
+                    @include atMedium {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 1px;
+                        transform: translate(100%, -60%);
+                        height: 1.875rem;
+                        width: 3.875rem;
+                        border: 1px solid $color-gray;
+                        border-bottom: 0;
+                    }
+                }
+
+                .connecting__features-item {
+                    @include atMedium {
+                        padding-left: 0;
+                        padding-right: 1.125rem;
+                    }
+
+                    &:after,
+                    &:before {
+                        @include atMedium {
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+
+                    &:after {
+                        @include atMedium {
+                            transform: translateX(50%);
+                        }
+                    }
+                }
+            }
+        }
+
+        &-item {
+            color: $color-white;
+            position: relative;
+            padding-left: 1.5rem;
+            @extend .paragraph;
+            @include atMedium {
+                padding-left: 1.125rem;
+            }
+
+            &:not(:last-child):before {
+                content: "";
+                position: absolute;
+                top: .667rem;
+                left: 0;
+                background-color: $color-gray;
+                height: calc(100% + 2.083rem);
+                width: 1px;
+                @include atMedium {
+                    top: .5rem;
+                    height: calc(100% + 1.25rem);
+                }
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                z-index: 1;
+                top: .667rem;
+                left: 0;
+                transform: translateX(-50%);
+                height: 8px;
+                width: 8px;
+                border-radius: 50%;
+                background-color: $color-gray;
+                @include atMedium {
+                    top: .5rem;
+                }
+            }
+
+            & + & {
+                margin-top: 2.083rem;
+                @include atMedium {
+                    margin-top: 1.25rem;
+                }
+            }
+
+            &--title {
+                color: $color-primary;
+                font-family: $font-bld;
+                @extend .heading-tertiary;
+                @extend .heading-tertiary--big;
+
+                &:after {
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+}

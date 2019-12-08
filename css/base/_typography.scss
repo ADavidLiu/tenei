@@ -1,0 +1,116 @@
+.paragraph {
+    font-family: $font-reg;
+    color: $color-dark-2;
+    font-size: 1.333rem;
+    line-height: 2rem;
+    @include atMedium {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    &--smaller {
+        font-size: 1rem;
+        color: $color-gray-alt-2;
+        @include atMedium {
+            font-size: .75rem;
+        }
+    }
+
+    &--small {
+        font-size: 1.167rem;
+        line-height: 1.833rem;
+        @include atMedium {
+            font-size: .875rem;
+            line-height: 1.375rem;
+        }
+    }
+}
+
+.heading-primary {
+    font-family: $font-reg;
+    font-size: 2.333rem;
+    line-height: 2.583rem;
+    color: $color-dark-2;
+    @include atMedium {
+        font-size: 1.75rem;
+        line-height: 1.9375rem;
+    }
+
+    &--big {
+        font-size: 3rem;
+        @include atMedium {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-family: $font-bld;
+    font-size: 2.083rem;
+    line-height: 2.5rem;
+    color: $color-dark-2;
+    @include atMedium {
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
+    }
+}
+
+.heading-tertiary {
+    font-family: $font-reg;
+    font-size: 1.5rem;
+    line-height: 2.167rem;
+    color: $color-dark-2;
+    @include atMedium {
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+
+    &--big {
+        font-size: 1.667rem;
+        @include atMedium {
+            font-size: 1.25rem;
+        }
+    }
+
+    &--huge {
+        font-size: 1.8333rem;
+        line-height: 2.75rem;
+        @include atMedium {
+            font-size: 1.375rem;
+            line-height: 2.0625rem;
+        }
+    }
+}
+
+.heading-quaternary {
+    font-family: $font-reg;
+    color: $color-dark-2;
+    font-size: 1.333rem;
+    line-height: 1.583rem;
+    @include atMedium {
+        font-size: 1rem;
+        line-height: 1.1875rem;
+    }
+}
+
+.heading-quinary {
+    font-family: $font-reg;
+    color: $color-dark-2;
+    font-size: 1.167rem;
+    line-height: 1.333rem;
+    @include atMedium {
+        font-size: .875rem;
+        line-height: 1rem;
+    }
+}
+
+.heading-senary {
+    font-family: $font-bld;
+    color: $color-dark-2;
+    font-size: 1.167rem;
+    line-height: 1.4167rem;
+    @include atMedium {
+        font-size: .875rem;
+        line-height: 1.0625rem;
+    }
+}

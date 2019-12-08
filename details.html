@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENEI</title>
+    <link rel="shortcut icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__content">
+                            <button class="header__btn">
+                                <span class="header__btn-line"></span>
+                                <span class="header__btn-line"></span>
+                                <span class="header__btn-line"></span>
+                            </button>
+                            <a href="#" class="header__logo"><img src="images/logo.png" alt="Logo" class="header__logo-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__sub">Update details</div>
+    </header>
+
+    <main class="content tabs">
+        <div class="content__group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="profile profile--nav">
+                            <div class="profile__info">
+                                <div class="profile__info-img" style="background-image: url('images/profile-placeholder.png');">&nbsp;</div>
+                                <div class="profile__info-copy">
+                                    <h2>Benjamin Clayton</h2>
+                                    <h4>Director of Design</h4>
+                                </div>
+                            </div>
+                            <div class="profile__actions">
+                                <div class="profile__actions-item order-lg-3">
+                                    <a href="#" class="profile__actions-signout"><img src="images/i-sign-out.svg" alt="Sign Out" class="profile__actions-signout-icon"></a>
+                                </div>
+                                <div class="profile__actions-item order-lg-2">
+                                    <a href="#" class="profile__actions-notifications">
+                                        <img src="images/i-notification.svg" alt="Notifications" class="profile__actions-notifications-icon">
+                                        <span class="profile__actions-notifications-dot">2</span>
+                                    </a>
+                                </div>
+                                <div class="profile__actions-item order-lg-1">
+                                    <p class="u-color-gray-alt"><a href="mailto:ben@kisslabs.co.nz">ben@kisslabs.co.nz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="nav">
+                            <div class="nav__track">
+                                <button class="nav__item nav__item--active" data-tab-trigger="personal"><span>PERSONAL DETAILS</span></button>
+                                <button class="nav__item" data-tab-trigger="contact"><span>CONTACT DETAILS</span></button>
+                                <button class="nav__item" data-tab-trigger="employment"><span>EMPLOYMENT &amp; RATES</span></button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__group content__group--main">
+            <div class="tabs__content">
+                <div class="tabs__content-item tabs__content-item--active" data-tabs-target="personal">
+                    <div class="container">
+                        <div class="row u-margin-bottom-med">
+                            <div class="col-12 col-lg-5 col-xl-4 u-margin-bottom-med u-margin-lg-bottom-null">
+                                <div class="form__group u-margin-bottom-med">
+                                    <label>Title</label>
+                                    <div class="dropdown dropdown--small">
+                                        <div class="dropdown__input">
+                                            <span class="dropdown__input-value" data-add-trigger-value="skill" data-placeholder="Select skill">Mr</span>
+                                        </div>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__list-item">Mr</li>
+                                            <li class="dropdown__list-item">Item 2</li>
+                                            <li class="dropdown__list-item">Item 3</li>
+                                            <li class="dropdown__list-item">Item 4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form__group u-margin-bottom-med">
+                                    <label>First name</label>
+                                    <input type="text" value="Benjamin">
+                                </div>
+                                <div class="form__group u-margin-bottom-med">
+                                    <label>Last name</label>
+                                    <input type="text" value="Clayton">
+                                </div>
+                                <div class="form__group">
+                                    <label>Description</label>
+                                    <textarea>Director of Design</textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-7 offset-xl-1 select-area">
+                                <div class="row">
+                                    <div class="col-12 col-xl-7 u-margin-bottom-med">
+                                        <label>Your Iwi</label>
+                                        <input type="text" disabled class="disabled-alt">
+                                    </div>
+                                </div>
+                                <div class="row align-items-end align-items-md-center align-items-xl-start">
+                                    <div class="col-12 col-md-7">
+                                        <div class="row select-area__labels">
+                                            <div class="col-12">
+                                                <label class="u-margin-bottom-smallest-2">Select your area</label>
+                                            </div>
+                                            <div class="col-6 col-md-12 col-xl-6">
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="hauauru">Hauāuru</p>
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="moana">Te Moana O Raukawa</p>
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="tokerau">Te Tai Tokerau</p>
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="ihu">Te Tau Ihu</p>
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="takitimu">Tākitimu</p>
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="rawhiti">Te Tai Rāwhiti</p>
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="arawa">Te Arawa Waka</p>
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="tauranga">Tauranga Moana</p>
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="waipounamu">Waipounamu and Rekohu Wharekauri</p>
+                                            </div>
+                                            <div class="col-6 col-md-12 col-xl-6">
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="mataatua">Mātaatua</p>
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="tainui">Tainui</p>
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="hauraki">Hauraki</p>
+                                                <p class="paragraph--small u-margin-bottom-smallest-2" data-area="tamaki">Tāmaki</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5">
+                                        <div class="select-area__map-wrapper">
+                                            <div class="select-area__hotspots">
+                                                <span class="select-area__hotspot" data-area="hauauru"></span>
+                                                <span class="select-area__hotspot" data-area="moana"></span>
+                                                <span class="select-area__hotspot" data-area="tokerau"></span>
+                                                <span class="select-area__hotspot" data-area="ihu"></span>
+                                                <span class="select-area__hotspot" data-area="takitimu"></span>
+                                                <span class="select-area__hotspot" data-area="rawhiti"></span>
+                                                <span class="select-area__hotspot" data-area="arawa"></span>
+                                                <span class="select-area__hotspot" data-area="tauranga"></span>
+                                                <span class="select-area__hotspot" data-area="waipounamu"></span>
+                                                <span class="select-area__hotspot" data-area="mataatua"></span>
+                                                <span class="select-area__hotspot" data-area="tainui"></span>
+                                                <span class="select-area__hotspot" data-area="hauraki"></span>
+                                                <span class="select-area__hotspot" data-area="tamaki"></span>
+                                            </div>
+                                            <img src="images/regions/map.svg" alt="Map" class="select-area__map select-area__map--base select-area__map--active" data-area="base">
+                                            <img src="images/regions/Hauāuru.svg" alt="Map" class="select-area__map" data-area="hauauru">
+                                            <img src="images/regions/Te-Moana-O-Raukawa.svg" alt="Map" class="select-area__map" data-area="moana">
+                                            <img src="images/regions/Te-Tai-Tokerau.svg" alt="Map" class="select-area__map" data-area="tokerau">
+                                            <img src="images/regions/Te-Tau-Ihu.svg" alt="Map" class="select-area__map" data-area="ihu">
+                                            <img src="images/regions/Tākitimu.svg" alt="Map" class="select-area__map" data-area="takitimu">
+                                            <img src="images/regions/Te-Tai-Rāwhiti.svg" alt="Map" class="select-area__map" data-area="rawhiti">
+                                            <img src="images/regions/Te-Arawa-Waka.svg" alt="Map" class="select-area__map" data-area="arawa">
+                                            <img src="images/regions/Tauranga-Moana.svg" alt="Map" class="select-area__map" data-area="tauranga">
+                                            <img src="images/regions/Waipounamu-and-Rekohu-Wharekauri.svg" alt="Map" class="select-area__map" data-area="waipounamu">
+                                            <img src="images/regions/Mātaatua.svg" alt="Map" class="select-area__map" data-area="mataatua">
+                                            <img src="images/regions/Tainui.svg" alt="Map" class="select-area__map" data-area="tainui">
+                                            <img src="images/regions/Hauraki.svg" alt="Map" class="select-area__map" data-area="hauraki">
+                                            <img src="images/regions/Tāmaki.svg" alt="Map" class="select-area__map" data-area="tamaki">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content-item" data-tabs-target="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                                <div class="form__group u-margin-bottom-med">
+                                    <label>Email address</label>
+                                    <input type="email" value="ben@kislabs.co.nz">
+                                </div>
+                                <div class="form__group u-margin-bottom-med">
+                                    <label>First name</label>
+                                    <input type="text" value="0210 255 6917">
+                                </div>
+                                <div class="form__group u-margin-bottom-med">
+                                    <label>Address</label>
+                                    <div class="form__subgroups-wrapper">
+                                        <div class="form__subgroup">
+                                            <label class="inner">Street name</label>
+                                            <input type="text" value="103 leinster avenue">
+                                        </div>
+                                        <div class="form__subgroup">
+                                            <label class="inner">Town</label>
+                                            <input type="text" value="Raumati South">
+                                        </div>
+                                        <div class="form__subgroup">
+                                            <label class="inner">City</label>
+                                            <input type="text" value="Wellington">
+                                        </div>
+                                        <div class="form__subgroup">
+                                            <label class="inner">Postcode</label>
+                                            <input type="text" value="5032">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content-item" data-tabs-target="employment">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-9">
+                                <div class="tabs__content-item-group">
+                                    <div class="tabs__content-item-group-limit">
+                                        <div class="checkbox checkbox--alt">
+                                            <input type="checkbox" id="permanent-employee">
+                                            <label class="u-color-dark-2" for="permanent-employee">I’m a permanant employee</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__content-item-group tabs__content-item-group--divided">
+                                    <div class="tabs__content-item-group-division">
+                                        <div class="tabs__content-item-group-limit">
+                                            <div class="checkbox checkbox--alt">
+                                                <input type="checkbox" id="contractor">
+                                                <label class="u-color-dark-2" for="contractor">I’m a contractor</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content-item-group-division">
+                                        <div class="calendar">
+                                            <div class="calendar__picker">
+                                                <label>Start date</label>
+                                                <input type="text" class="datepicker">
+                                            </div>
+                                            <div class="calendar__picker">
+                                                <label>End date</label>
+                                                <input type="text" class="datepicker">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__content-item-group">
+                                    <div class="tabs__content-item-group-limit">
+                                        <label class="u-margin-bottom-smaller">Hourly rate</label>
+                                        <input type="text" value="$100-150">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <footer class="footer">
+                            <a href="#" class="btn">Cancel</a>
+                            <a href="#" class="btn btn--primary">SAVE</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <nav class="sidebar__nav">
+            <div class="sidebar__nav-main">
+                <button class="sidebar__nav-btn">
+                    <div class="sidebar__nav-btn-lines">
+                        <span class="sidebar__nav-btn-line"></span>
+                        <span class="sidebar__nav-btn-line"></span>
+                        <span class="sidebar__nav-btn-line"></span>
+                    </div>
+                </button>
+                <a href="#" class="sidebar__nav-item">
+                    <img src="images/i-search.svg" alt="Search" class="sidebar__nav-item-icon">
+                </a>
+                <a href="#" class="sidebar__nav-item sidebar__nav-item--active">
+                    <img src="images/i-dashboard.svg" alt="Dashboard" class="sidebar__nav-item-icon">
+                </a>
+                <a href="#" class="sidebar__nav-item">
+                    <img src="images/i-chat.svg" alt="Chat" class="sidebar__nav-item-icon">
+                </a>
+            </div>
+            <div class="sidebar__nav-sub">
+                <a href="#" class="sidebar__nav-sub-link">Settings</a>
+                <a href="#" class="sidebar__nav-sub-link">Help</a>
+            </div>
+        </nav>
+        <div class="sidebar__menu sidebar__menu--hidden">
+            <a href="#" class="sidebar__menu-logo"><img src="images/logo.png" alt="Logo" class="sidebar__menu-logo-img"></a>
+            <ul class="sidebar__menu-list">
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Dashboard</a>
+                </li>
+                <li class="sidebar__menu-item sidebar__menu-item--active">
+                    <a href="#" class="sidebar__menu-link">Update Details</a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Add Skills <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Add Police Check <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Add References <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/vendors/jquery-ui.min.js"></script>
+    <script src="js/app-dist.js"></script>
+
+</body>
+
+</html>

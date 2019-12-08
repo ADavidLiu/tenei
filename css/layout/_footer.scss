@@ -1,0 +1,114 @@
+.footer {
+    padding: 2.083rem 0;
+    text-align: right;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    @include atMedium {
+        padding: 1.5625rem 0;
+    }
+
+    &__content {
+        @include atMedium {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @include atExtralarge {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__menu {
+        @include atMedium {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-item {
+            @include atMedium {
+                font-family: $font-bld;
+                color: $color-white;
+                font-size: .875rem;
+            }
+
+            & + & {
+                @include atMedium {
+                    margin-left: 2.55rem;
+                }
+                @include atLarge {
+                    margin-left: 3.25rem;
+                }
+                @include atExtralarge {
+                    margin-left: 2.5rem;
+                }
+                @include atHuge {
+                    margin-left: 3.125rem;
+                }
+            }
+        }
+
+        & + & {
+            @include atLarge {
+                margin-left: 2.55rem;
+            }
+            @include atLarge {
+                margin-left: 3.95rem;
+            }
+            @include atExtralarge {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__logo {
+        @include atMedium {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        @include atExtralarge {
+            margin-bottom: 0;
+            width: 7.1875rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &-img {
+            @include atMedium {
+                width: 7.1875rem;
+            }
+        }
+    }
+
+    .btn {
+        & + .btn {
+            margin-left: 1.875rem;
+        }
+    }
+
+    &--alt {
+        padding-top: 9.583rem;
+        @include atMedium {
+            padding-top: 0;
+            padding-bottom: 2.8125rem;
+        }
+
+        .footer {
+            &__content {
+                display: none;
+                @include atMedium {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+// Colors
+$color-primary: #DEAA22;
+$color-secondary: #A31106;
+
+$color-dark: #26272C;
+$color-dark-2: #595959;
+$color-dark-3: #35373E;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-gray: #CCCCCC;
+$color-gray-lgt: #F7F7F7;
+$color-gray-alt: #67737B;
+$color-gray-alt-2: #7F8C8D;
+$color-gray-alt-3: #D8D8D8;
+$color-gray-alt-4: #E6E6E6;
+$color-gray-alt-5: #515256;
+
+$color-success: #2ECC71;
+$color-error: #E74C3C;
+
+
+// Typography
+@font-face {
+    font-family: "ProximaNova-Light";
+    src: url("../fonts/ProximaNova-Light.ttf");
+}
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("../fonts/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+    font-family: "ProximaNova-Semibold";
+    src: url("../fonts/ProximaNova-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "ProximaNova-Bold";
+    src: url("../fonts/ProximaNova-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Archer-Medium";
+    src: url("../fonts/Archer-Medium.otf");
+}
+
+$font-lgt: "ProximaNova-Regular", "Helvetica", "Arial", sans-serif;
+$font-reg: "ProximaNova-Regular", "Helvetica", "Arial", sans-serif;
+$font-bld: "ProximaNova-Bold", "Helvetica", "Arial", sans-serif;
+$font-smb: "ProximaNova-Semibold", "Helvetica", "Arial", sans-serif;
+
+$font-alt: "Archer-Medium", "Times New Roman", serif;

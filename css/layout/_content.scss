@@ -1,0 +1,59 @@
+.content {
+    background-color: $color-white;
+    margin-top: 3.875rem;
+    @include atMedium {
+        margin-top: 0;
+        order: 2;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    &__group {
+        max-width: 100%;
+        
+        .container {
+            @include atMedium {
+                max-width: 100%;
+                padding: 0 2.5rem;
+            }
+            @include atLarge {
+                padding: 0 3.75rem;
+            }
+        }
+
+        &:first-child {
+            border-bottom: 1px solid rgba($color-gray, .5);
+        }
+
+        &:last-child {
+            border-top: 1px solid rgba($color-gray, .5);
+            padding-bottom: 5rem;
+            @include atMedium {
+                padding-bottom: 0;
+            }
+        }
+
+        &--main {
+            padding: 3.333rem 0;
+            @include atMedium {
+                padding: 2.5rem 0;
+                flex: 1;
+            }
+        }
+
+        &--scrollable {
+            
+        }
+    }
+}
+
+.container {
+    &--big {
+        @include atHuge {
+            max-width: 1262px;
+        }
+    }
+}

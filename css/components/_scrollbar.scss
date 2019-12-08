@@ -1,0 +1,15 @@
+.simplebar {
+    &-scrollbar {
+        background-color: $color-primary;
+        width: 100%;
+        right: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    &-track {
+        background-color: $color-gray-alt-3;
+    }
+}

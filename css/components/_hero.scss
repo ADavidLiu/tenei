@@ -1,0 +1,10 @@
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 14.5rem;
+    opacity: .61;
+    @include atMedium {
+        height: 39.125rem;
+    }
+}

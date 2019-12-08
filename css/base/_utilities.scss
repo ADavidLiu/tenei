@@ -1,0 +1,299 @@
+// Color
+.u-color {
+    &-primary {
+        color: $color-primary;
+    }
+
+    &-white {
+        color: $color-white;
+    }
+
+    &-dark {
+        color: $color-dark;
+    }
+
+    &-success {
+        color: $color-success;
+    }
+
+    &-error {
+        color: $color-error;
+    }
+
+    &-gray {
+        color: $color-gray;
+
+        &-alt {
+            color: $color-gray-alt;
+        }
+
+        &-lgt {
+            color: $color-gray-lgt;
+        }
+    }
+}
+
+
+// Background
+.u-bg {
+    &-white {
+        background-color: $color-white;
+    }
+
+    &-dark {
+        background-color: $color-dark;
+
+        &-3 {
+            background-color: $color-dark-3;
+        }
+    }
+}
+
+
+// Font family
+.u-font {
+    &-lgt {
+        font-family: $font-lgt;
+    }
+
+    &-reg {
+        font-family: $font-reg;
+    }
+    
+    &-bld {
+        font-family: $font-bld;
+    }
+
+    &-alt {
+        font-family: $font-alt;
+    }
+}
+
+
+// Margin
+.u-margin {
+    &-top {
+        &-null {
+            margin-top: 0 !important;
+        }
+    }
+    
+    &-bottom {
+        &-smallest {
+            margin-bottom: 10px;
+
+            &-2 {
+                margin-bottom: 5px;
+            }
+        }
+
+        &-smaller {
+            margin-bottom: 1.333rem;
+            @include atMedium {
+                margin-bottom: 1rem;
+            }
+        }
+
+        &-small {
+            margin-bottom: 2rem;
+            @include atMedium {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &-med {
+            margin-bottom: 2.5rem;
+            @include atMedium {
+                margin-bottom: 1.875rem;
+            }
+
+            &-2 {
+                margin-bottom: 3.333rem;
+                @include atMedium {
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+
+        &-huge {
+            margin-bottom: 8.333rem;
+            @include atMedium {
+                margin-bottom: 6.25rem;
+            }
+        }
+    }
+
+    &-right {
+        &-small {
+            margin-right: 1.667rem;
+            @include atMedium {
+                margin-right: 1.25rem;
+            }
+        }
+    }
+
+    &-md {
+        @include atMedium {
+            &-bottom {
+                &-null {
+                    margin-bottom: 0;
+                }
+                
+                &-smaller {
+                    margin-bottom: 1rem;
+                }
+
+                &-small {
+                    margin-bottom: 1.5rem;
+                }
+
+                &-med {
+                    margin-bottom: 1.875rem;
+                }
+
+                &-huge {
+                    margin-bottom: 4.375rem;
+                }
+            }
+        }
+    }
+
+    &-lg {
+        @include atLarge {
+            &-bottom {
+                &-null {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+// Padding
+.u-padding {
+    &-vertical {
+        &-big {
+            padding-top: 3.333rem;
+            padding-bottom: 3.333rem;
+            @include atMedium {
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+            }
+        }
+
+        &-huge {
+            padding-top: 3.583rem;
+            padding-bottom: 3.583rem;
+            @include atMedium {
+                padding-top: 3.75rem;
+                padding-bottom: 3.75rem;
+            }
+        }
+    }
+
+    &-top {
+        &-huge {
+            padding-top: 3.5833rem;
+            @include atMedium {
+                padding-top: 8.375rem;
+            }
+        }
+    }
+
+    &-bottom {
+        &-med {
+            padding-bottom: 2.5rem;
+            @include atMedium {
+                padding-bottom: 1.875rem;
+            }
+        }
+
+        &-big {
+            padding-bottom: 2.083rem;
+        }
+    }
+
+    &-md {
+        @include atMedium {
+            &-vertical {
+                &-big {
+                    padding-top: 2.5rem;
+                    padding-bottom: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+// Alignment
+.u-align {
+    &-inline {
+        &-right {
+            text-align: right;
+        }
+    }
+
+    &-md {
+        @include atMedium {
+            &-inline {
+                &-right {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+
+// Direction
+.u-dir {
+    &-rtl {
+        direction: rtl;
+        text-align: right;
+    }
+
+    &-md {
+        @include atMedium {
+            &-ltr {
+                direction: ltr;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+// Line height
+.u-lh {
+    &-small {
+        line-height: 2.167rem;
+        @include atMedium {
+            line-height: 1.625rem;
+        }
+    }
+
+    &-med {
+        line-height: 3.333rem;
+        @include atMedium {
+            line-height: 2.5rem;
+        }
+    }
+}
+
+
+// Scroll
+.u-scrollable {
+    max-width: 100vw !important;
+    max-height: 70vh;
+    @include atMedium {
+        max-width: calc(100vw - 21.875rem) !important;
+    }
+
+    &--full {
+        @include atMedium {
+            max-width: calc(100vw - 6.25rem) !important;
+        }
+    }
+}

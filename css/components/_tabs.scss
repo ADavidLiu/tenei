@@ -1,0 +1,64 @@
+.tabs {
+    &__content {
+        &-item {
+            display: none;
+
+            &-group {
+                & + & {
+                    margin-top: 3.125rem;
+                    padding-top: 3.125rem;
+                    border-top: 1px solid rgba($color-gray, .32);
+                }
+
+                &-division {
+                    & + & {
+                        margin-top: 1.333rem;
+                        @include atExtralarge {
+                            margin-top: 0;
+                            margin-left: 2rem;
+                        }
+                        @include atHuge {
+                            margin-left: 5.625rem;
+                        }
+                    }
+
+                    &--small {
+                        padding: 0;
+
+                        & + & {
+                            @include atExtralarge {
+                                margin-left: 1rem;
+                            }
+                            @include atHuge {
+                                margin-left: 3.125rem;
+                            }
+                        }
+                    }
+                }
+
+                &-limit {
+                    @include atMedium {
+                        width: 200px;
+                    }
+                }
+
+                &--divided {
+                    @include atExtralarge {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-start;
+                    }
+                }
+
+                &--inner {
+                    margin-top: 3rem !important;
+                    padding-top: 1rem !important;
+                }
+            }
+
+            &--active {
+                display: block;
+            }
+        }
+    }
+}

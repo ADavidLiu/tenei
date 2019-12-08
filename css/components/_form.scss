@@ -1,0 +1,392 @@
+.label,
+label {
+    color: $color-gray-alt;
+    font-family: $font-bld;
+    font-size: 1.083rem;
+    margin-bottom: 2px;
+    @include atMedium {
+        font-size: .8125rem;
+    }
+
+    &.inner {
+        position: absolute;
+        font-size: .9167rem;
+        color: rgba($color-dark-2, .5);
+        font-family: $font-reg;
+        left: 1rem;
+        top: 10px;
+        @include atMedium {
+            font-size: .6875rem;
+            left: .75rem;
+        }
+
+        & + input,
+        & + textarea,
+        & + .dropdown__input {
+            border: 0;
+            min-height: 5rem;
+            padding-top: 1.667rem;
+            @include atMedium {
+                min-height: 3.75rem;
+                padding-top: 1.25rem;
+            }
+        }
+    }
+
+    &.lgt {
+        color: $color-white;
+        font-family: $font-reg;
+    }
+}
+
+.dropdown__input,
+input,
+textarea {
+    border: 1px solid $color-gray;
+    padding: 0 1rem;
+    min-height: 3.333rem;
+    background-color: $color-gray-lgt;
+    display: block;
+    width: 100%;
+    transition: all .25s;
+    @extend .heading-tertiary;
+    @include atMedium {
+        min-height: 2.5rem;
+        padding: 0 .75rem;
+    }
+
+    &:focus {
+        border-color: $color-primary;
+    }
+
+    &[disabled] {
+        background: transparent;
+        border: 0;
+        text-overflow: ellipsis;
+
+        &.disabled-alt {
+            background: $color-gray-lgt;
+            border: 1px solid $color-gray;
+            text-overflow: initial;
+        }
+    }
+
+    &[type="file"] {
+        display: none;
+    }
+}
+
+textarea {
+    height: 10.625rem;
+    width: 100%;
+    padding: 5px 1rem 1rem 1rem;
+    @include atMedium {
+        padding: 5px .75rem .75rem .75rem;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.form {
+    &__group {
+        position: relative;
+
+        & + & {
+            margin-top: 1.333rem;
+            @include atMedium {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    &__subgroups-wrapper {
+        border: 1px solid $color-gray;
+    }
+
+    &__subgroup {
+        position: relative;
+
+        & + & {
+            border-top: 1px solid rgba($color-gray, .5);
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+
+    &__input {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        background-image: url("../images/i-chevron.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        padding: 0 1rem;
+        padding-right: 3rem;
+        background-position: calc(100% - 8px) center;
+        cursor: pointer;
+        transition: all .25s;
+        @include atMedium {
+            padding: 0 .75rem;
+        }
+
+        &-value {
+            color: $color-dark-2;
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            @extend .heading-tertiary;
+            @include atMedium {
+                width: 80%;
+            }
+        }
+
+        &--active {
+            border-color: $color-primary;
+        }
+    }
+
+    &__list {
+        border: 1px solid $color-primary;
+        background-color: $color-gray-lgt;
+        box-shadow: 0 0 10px 0 rgba($color-black, .1);
+        position: absolute;
+        z-index: 4;
+        top: 3.833rem;
+        left: 0;
+        width: 100%;
+        display: none;
+        max-height: 205px;
+        overflow-y: auto;
+        list-style: none;
+        padding: 0;
+        @include atMedium {
+            top: 2.875rem;
+            width: calc(100% + 7.5rem);
+        }
+
+        &-item {
+            padding: 10px 1rem;
+            cursor: pointer;
+            transition: all .25s;
+            @extend .heading-tertiary;
+            @include atMedium {
+                padding: 10px .75rem;
+            }
+
+            & + & {
+                border-top: 1px solid rgba($color-gray, .5);
+            }
+
+            &:hover,
+            &--active {
+                background-color: rgba($color-gray-alt-4, .6);
+            }
+        }
+    }
+
+    &--small {
+        max-width: 110px;
+    }
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    input {
+        appearance: none;
+        align-self: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40% auto;
+        background-color: $color-gray-lgt;
+        border: 1px solid $color-gray;
+        transition: all .25s;
+        height: 3.333rem;
+        width: 3.333rem;
+        max-height: 3.333rem;
+        max-width: 3.333rem;
+        min-height: 3.333rem;
+        min-width: 3.333rem;
+        margin-right: 1.5625rem;
+        cursor: pointer;
+        transition: none;
+        @include atMedium {
+            height: 2.5rem;
+            width: 2.5rem;
+            min-height: 2.5rem;
+            min-width: 2.5rem;
+            max-height: 2.5rem;
+            max-width: 2.5rem;
+        }
+
+        &:checked {
+            background-image: url("../images/i-tick.svg");
+            border-color: $color-success;
+        }
+    }
+
+    label {
+        border: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        cursor: pointer;
+    }
+
+    & + & {
+        margin-top: 1.333rem;
+        @include atMedium {
+            margin-top: 1rem;
+        }
+    }
+
+    &--alt {
+        @include atMedium {
+            align-items: flex-start;
+        }
+
+        label {
+            order: 1;
+            margin-right: 2.5rem !important;
+            @include atMedium {
+                max-width: 115px;
+            }
+        }
+
+        input {
+            order: 2;
+            margin: 0 0 0 auto;
+        }
+    }
+
+    &--vertical {
+        flex-direction: column;
+        align-items: flex-start;
+
+        label {
+            margin: 0 0 2px 0 !important;
+            white-space: nowrap;
+        }
+
+        input {
+            margin: 0 auto 0 0;
+        }
+    }
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__picker {
+        input {
+            background-image: url("../images/i-calendar.svg");
+            background-position: calc(100% - 8px) center;
+            background-size: auto 60%;
+            background-repeat: no-repeat;
+        }
+
+        & + & {
+            margin-left: 3.125rem;
+            @include atExtralarge {
+                margin-left: 1rem;
+            }
+            @include atHuge {
+                margin-left: 3.125rem;
+            }
+        }
+    }
+}
+
+.ui-datepicker {
+    background-color: $color-gray-lgt;
+    border: 1px solid $color-primary;
+    padding: 1rem;
+    margin-top: 11px;
+    position: absolute;
+    z-index: -1;
+
+    .ui-widget-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .ui-datepicker {
+            &-prev,
+            &-next {
+                color: transparent;
+                height: 15px;
+                width: 9px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                cursor: pointer;
+
+                &:hover {
+                    color: transparent;
+                    text-decoration: none;
+                }
+            }
+
+            &-prev {
+                order: 1;
+                background-image: url("../images/i-arrow-left.svg");
+            }
+
+            &-next {
+                order: 3;
+                background-image: url("../images/i-arrow-right.svg");
+            }
+        }
+
+        .ui-datepicker-title {
+            order: 2;
+            text-transform: uppercase;
+            color: $color-gray-alt;
+            @extend .paragraph;
+        }
+    }
+
+    table {
+        th,
+        td {
+            width: 2.5rem;
+            height: 2.5rem;
+            text-align: center;
+            font-family: $font-reg;
+            @extend .paragraph;
+        }
+
+        td {
+            transition: all .25s;
+            @extend .paragraph--small;
+
+            &.ui-datepicker-today {
+                background-color: $color-primary;
+                color: $color-white;
+
+                &:hover {
+                    color: $color-white;
+
+                    a {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+
+        th {
+            text-transform: uppercase;
+            color: rgba($color-gray-alt, .5);
+            @extend .paragraph--smaller;
+        }
+    }
+}

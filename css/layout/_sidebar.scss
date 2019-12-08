@@ -1,0 +1,351 @@
+.sidebar {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    @include atMedium {
+        position: static;
+        width: auto;
+        min-height: 100vh;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    &__nav {
+        height: 100%;
+        background-color: $color-dark;
+        @include atMedium {
+            width: 6.25rem;
+            background-image: url("../images/pattern-bg.png");
+            background-repeat: contain;
+            background-size: contain;
+            background-position: center top;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        &-main {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            position: relative;
+            @include atMedium {
+                display: block;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                z-index: 1;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-image: url("../images/sidebar-menu-bg.jpg");
+                background-repeat: repeat;
+                background-size: auto;
+                background-position: left center;
+                @include atMedium {
+                    display: none;
+                }
+            }
+        }
+
+        &-btn {
+            background: transparent;
+            margin: 0;
+            width: 100%;
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            padding: 2.083rem 0;
+            display: none;
+            @include atMedium {
+                display: block;
+                padding: 1.5625rem 0;
+            }
+
+            &-lines {
+                display: block;
+                margin: 0 auto;
+                width: 2.5rem;
+                @include atMedium {
+                    width: 1.875rem;
+                }
+            }
+
+            &-line {
+                height: 3px;
+                width: 2.5rem;
+                border-radius: 2rem;
+                background-color: $color-gray;
+                display: block;
+                transition: all .25s;
+                @include atMedium {
+                    width: 1.875rem;
+                }
+
+                & + & {
+                    margin-top: 6px;
+                    @include atMedium {
+                        margin-top: 9px;
+                    }
+                }
+
+                &:last-child {
+                    width: 1.5rem;
+                    @include atMedium {
+                        width: 1.125rem;
+                    }
+                }
+            }
+
+            &:hover {
+                .sidebar__nav-btn-line {
+                    background-color: $color-primary;
+                }
+            }
+        }
+
+        &-item {
+            flex: 1 1 0;
+            display: block;
+            padding: 7px 0 10px 0;
+            text-align: center;
+            @include atMedium {
+                flex: initial;
+                width: 100%;
+                padding: 1.5625rem 0;
+            }
+
+            &-icon {
+                transition: all .25s;
+                filter: grayscale(100%);
+            }
+
+            &:hover {
+                background-image: none;
+
+                .sidebar__nav-item-icon {
+                    filter: none;
+                }
+            }
+
+            &--active {
+                background-image: url("../images/sidebar-menu-bg.jpg") !important;
+                background-repeat: repeat;
+                background-size: auto;
+                background-position: center;
+                position: relative;
+                @include atMedium {
+                    transform: none !important;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 5px;
+                    background-image: url("../images/sidebar-menu-bg.jpg");
+                    background-repeat: repeat;
+                    background-size: auto;
+                    background-position: center;
+                    transform: translateY(-100%);
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 3px;
+                    width: 2.5rem;
+                    background-color: rgba($color-gray-alt-3, .16);
+                    border-radius: 2rem;
+                    @include atMedium {
+                        width: 1.875rem;
+                        display: none;
+                    }
+                }
+
+                .sidebar__nav-item-icon {
+                    filter: none;
+                }
+            }
+        }
+
+        &-sub {
+            padding-bottom: 2.5rem;
+            display: none;
+            @include atMedium {
+                display: block;
+                padding-bottom: 1.875rem;
+            }
+
+            &-link {
+                display: block;
+                padding: 0 2.083rem;
+                @extend .paragraph;
+                @extend .paragraph--small;
+                @include linkStates($color-white, none);
+                @include atMedium {
+                    padding: 0 1.5625rem;
+                }
+
+                &:hover {
+                    color: $color-primary;
+                }
+
+                & + & {
+                    margin-top: 1.667rem;
+                    @include atMedium {
+                        margin-top: 1.25rem;
+                    }
+                }
+            }
+        }
+
+        &--alt {
+            .sidebar__nav {
+                &-item {
+                    &-icon {
+                        @include atMedium {
+                            opacity: .25;
+                        }
+                    }
+
+                    &:hover {
+                        .sidebar__nav-item-icon {
+                            opacity: 1;
+                            @include atMedium {
+                                filter: grayscale(100%) brightness(200%);
+                            }
+                        }
+                    }
+
+                    &--active {
+                        /* background-color: $color-dark;
+                        background-image: none !important; */
+
+                        .sidebar__nav-item-icon {
+                            @include atMedium {
+                                opacity: 1;
+                                filter: grayscale(100%) brightness(200%);
+                            }
+                        }
+
+                        &:before {
+                            @include atMedium {
+                                display: none;
+                            }
+                        }
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__menu {
+        background-color: $color-dark-3;
+        background-image: url("../images/sidebar-menu-bg.jpg");
+        background-repeat: repeat;
+        background-size: auto;
+        background-position: left top;
+        transition: all .25s;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        @include atMedium {
+            display: block;
+            width: 15.625rem;
+            transform: none;
+            position: static;
+        }
+        
+        @include atMedium {
+            padding: 2.5rem 1.25rem;
+            width: 15.625rem;
+        }
+
+        &-logo {
+            display: none;
+            @include atMedium {
+                display: inline-block;
+                padding-left: 1.25rem;
+                margin-bottom: 2.125rem;
+            }
+
+            &-img {
+                max-width: 9.1875rem;
+            }
+        }
+
+        &-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        &-item {
+            color: $color-white;
+            transition: all .25s;
+
+            & + & {
+                border-top: 1px solid $color-dark;
+                @include atMedium {
+                    border-top: 0;
+                }
+            }
+
+            &--active {
+                color: $color-primary;
+
+                .sidebar__menu-link {
+                    @include atMedium {
+                        background-color: $color-dark;
+                    }
+                }
+            }
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 2.5rem;
+            @extend .paragraph;
+            @extend .paragraph--small;
+            @include atMedium {
+                padding: .75rem 1.25rem;
+                background-color: transparent;
+                border-radius: 5px;
+            }
+        }
+
+        &--hidden {
+            transform: translateY(100%);
+            @include atMedium {
+                position: static;
+                transform: none;
+                width: 15.625rem;
+            }
+        }
+
+        &--hidden-alt {
+            @include atMedium {
+                display: none;
+            }
+        }
+    }
+}

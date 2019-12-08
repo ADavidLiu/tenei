@@ -1,0 +1,35 @@
+.banner {
+    padding-top: 4rem;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    @include atMedium {
+        padding: 19.1875rem 0 10.375rem 0;
+        background-position: center;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background-color: $color-dark-3;
+        @include atMedium {
+            display: none;
+        }
+    }
+
+    &--alt {
+        @include atMedium {
+            padding-bottom: 18.125rem;
+        }
+    }
+
+    &--no-bg {
+        background: none;
+    }
+}

@@ -1,0 +1,39 @@
+.detail {
+    padding-bottom: 2.1875rem;
+    border-bottom: 1px solid rgba($color-gray, .3);
+
+    &__label {
+        color: $color-gray-alt;
+        font-family: $font-bld;
+        font-size: 1.083rem;
+        @include atMedium {
+            font-size: .8125rem;
+        }
+    }
+
+    &__profile-img {
+        height: 4.667rem;
+        width: 4.667rem;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @include atMedium {
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+    }
+
+    & + & {
+        margin-top: 2.5rem;
+        @include atMedium {
+            margin-top: 1.875rem;
+        }
+    }
+
+    &:last-child {
+        @include atMedium {
+            border-bottom: 0;
+        }
+    }
+}

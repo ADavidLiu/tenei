@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENEI</title>
+    <link rel="shortcut icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="popup">
+        <div class="popup__content">
+            <div class="popup__content-header">
+                <h2>Title/header for the overlay message</h2>
+            </div>
+            <div class="popup__content-main">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            </div>
+            <div class="popup__content-footer">
+                <button class="btn" data-cancel>Cancel</button>
+                <button class="btn btn--secondary" data-delete>DELETE</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header__main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__content">
+                            <button class="header__btn">
+                                <span class="header__btn-line"></span>
+                                <span class="header__btn-line"></span>
+                                <span class="header__btn-line"></span>
+                            </button>
+                            <a href="#" class="header__logo"><img src="images/logo.png" alt="Logo" class="header__logo-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__sub">Add skills</div>
+    </header>
+
+    <main class="content">
+        <div class="content__group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="profile">
+                            <div class="profile__info">
+                                <div class="profile__info-img" style="background-image: url('images/profile-placeholder.png');">&nbsp;</div>
+                                <div class="profile__info-copy">
+                                    <h2>Benjamin Clayton</h2>
+                                    <h4>Director of Design</h4>
+                                </div>
+                            </div>
+                            <div class="profile__actions">
+                                <div class="profile__actions-item order-lg-3">
+                                    <a href="#" class="profile__actions-signout"><img src="images/i-sign-out.svg" alt="Sign Out" class="profile__actions-signout-icon"></a>
+                                </div>
+                                <div class="profile__actions-item order-lg-2">
+                                    <a href="#" class="profile__actions-notifications">
+                                        <img src="images/i-notification.svg" alt="Notifications" class="profile__actions-notifications-icon">
+                                        <span class="profile__actions-notifications-dot">2</span>
+                                    </a>
+                                </div>
+                                <div class="profile__actions-item order-lg-1">
+                                    <p class="u-color-gray-alt"><a href="mailto:ben@kisslabs.co.nz">ben@kisslabs.co.nz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__group content__group--main">
+            <div class="container">
+                <div class="row u-margin-bottom-med">
+                    <div class="col-12 col-xl-9">
+                        <div class="add add--skills">
+                            <div class="add__inner">
+                                <div class="add__message">
+                                    <img src="images/i-attention.svg" alt="Attention" class="add__message-icon">
+                                    <h3 class="u-color-primary">Please add your skills</h3>
+                                </div>
+                                <div class="add__inputs">
+                                    <div class="add__inputs-main">
+                                        <div class="add__inputs-group dropdown-group">
+                                            <div class="row add__inputs-line align-items-end" data-add-labels>
+                                                <div class="col-10">
+                                                    <div class="row align-items-end add__inputs-labels">
+                                                        <div class="col-4">
+                                                            <label class="label-skill">Select a skill to add</label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label>Details required</label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label>Years</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    <label>&nbsp;</label>
+                                                </div>
+                                            </div>
+                                            <div class="add__inputs-main-list">
+
+                                            </div>
+                                            <div class="row add__inputs-line" data-add-inputs>
+                                                <div class="col-10">
+                                                    <div class="row">
+                                                        <div class="col-4 u-margin-md-bottom-smaller u-margin-lg-bottom-null">
+                                                            <div class="dropdown">
+                                                                <div class="dropdown__input">
+                                                                    <span class="dropdown__input-value" data-add-trigger-value="skill" data-placeholder="Select skill">Select skill</span>
+                                                                </div>
+                                                                <ul class="dropdown__list">
+                                                                    <li class="dropdown__list-item" data-requires-question="true">Requires question</li>
+                                                                    <li class="dropdown__list-item">Job title</li>
+                                                                    <li class="dropdown__list-item">Job title</li>
+                                                                    <li class="dropdown__list-item">Job title</li>
+                                                                    <li class="dropdown__list-item">Job title</li>
+                                                                    <li class="dropdown__list-item">Job title</li>
+                                                                    <li class="dropdown__list-item">Job title</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 u-margin-md-bottom-smaller u-margin-lg-bottom-null">
+                                                            <input type="text" data-add-trigger-value="detail">
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="dropdown">
+                                                                <div class="dropdown__input">
+                                                                    <span class="dropdown__input-value" data-add-trigger-value="years"></span>
+                                                                </div>
+                                                                <ul class="dropdown__list">
+                                                                    <li class="dropdown__list-item">1</li>
+                                                                    <li class="dropdown__list-item">2</li>
+                                                                    <li class="dropdown__list-item">3</li>
+                                                                    <li class="dropdown__list-item">4</li>
+                                                                    <li class="dropdown__list-item">5</li>
+                                                                    <li class="dropdown__list-item">6</li>
+                                                                    <li class="dropdown__list-item">6+</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    <div class="add__inputs-actions">
+                                                        <div class="add__inputs-actions-item add__inputs-actions-item--edit">
+                                                            <img src="images/i-edit.svg" alt="Close" class="add__inputs-actions-item-icon">
+                                                        </div>
+                                                        <div class="add__inputs-actions-item add__inputs-actions-item--active add__inputs-actions-item--close">
+                                                            <img src="images/i-close.svg" alt="Close" class="add__inputs-actions-item-icon">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add__inputs-sub">
+                                        <div class="add__inputs-group" data-add-question>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p class="u-color-error paragraph--small u-margin-md-bottom-med" data-question-message>To add this skill, we require you to provide a short answer to the question below:</p>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-xl-5 u-margin-md-bottom-smaller u-margin-md-bottom-null">
+                                                    <p class="label">Question</p>
+                                                    <p>Which development environment tools are you familiar with and what is your level of experience with them, e.g. Expert, intermediate or novice?</p>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-xl-6 offset-xl-1">
+                                                    <p class="label">Enter Description: (Max 100 chars)</p>
+                                                    <textarea maxlength="100" placeholder="Entry text" data-question-answer></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="add__inputs-controls-wrapper">
+                                            <div class="add__inputs-total">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="paragraph--smaller">Showing <span class="current">0</span> of <span class="total">0</span> entries</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="add__inputs-controls" data-add-inputs-controls>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button class="btn" data-add-cancel>Cancel</button>
+                                                        <button class="btn btn--primary btn--primary-ghost" data-add-new>ADD</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="add__inputs-controls" data-add-inputs-new>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button class="btn btn--primary btn--primary-ghost" data-add-new>ADD NEW SKILL</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="add__inputs-controls" data-add-inputs-update>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button class="btn" data-update-cancel>Cancel</button>
+                                                        <button class="btn btn--primary btn--primary-ghost" data-update-save>SAVE UPDATE</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add__controls" data-add-initial-controls>
+                                    <div class="add__controls-btns">
+                                        <button class="btn btn--primary btn--primary-ghost">ADD SKILLS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <footer class="footer">
+                            <a href="#" class="btn">Cancel</a>
+                            <a href="#" class="btn btn--primary">DONE</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <nav class="sidebar__nav">
+            <div class="sidebar__nav-main">
+                <button class="sidebar__nav-btn">
+                    <div class="sidebar__nav-btn-lines">
+                        <span class="sidebar__nav-btn-line"></span>
+                        <span class="sidebar__nav-btn-line"></span>
+                        <span class="sidebar__nav-btn-line"></span>
+                    </div>
+                </button>
+                <a href="#" class="sidebar__nav-item">
+                    <img src="images/i-search.svg" alt="Search" class="sidebar__nav-item-icon">
+                </a>
+                <a href="#" class="sidebar__nav-item sidebar__nav-item--active">
+                    <img src="images/i-dashboard.svg" alt="Dashboard" class="sidebar__nav-item-icon">
+                </a>
+                <a href="#" class="sidebar__nav-item">
+                    <img src="images/i-chat.svg" alt="Chat" class="sidebar__nav-item-icon">
+                </a>
+            </div>
+            <div class="sidebar__nav-sub">
+                <a href="#" class="sidebar__nav-sub-link">Settings</a>
+                <a href="#" class="sidebar__nav-sub-link">Help</a>
+            </div>
+        </nav>
+        <div class="sidebar__menu sidebar__menu--hidden">
+            <a href="#" class="sidebar__menu-logo"><img src="images/logo.png" alt="Logo" class="sidebar__menu-logo-img"></a>
+            <ul class="sidebar__menu-list">
+                <li class="sidebar__menu-item sidebar__menu-item--active">
+                    <a href="#" class="sidebar__menu-link">Dashboard</a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Update Details</a>
+                </li>
+                <li class="sidebar__menu-item sidebar__menu-item--active">
+                    <a href="#" class="sidebar__menu-link">Add Skills <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Add Police Check <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Add References <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/app-dist.js"></script>
+
+</body>
+
+</html>

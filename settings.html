@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENEI</title>
+    <link rel="shortcut icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__content">
+                            <button class="header__btn">
+                                <span class="header__btn-line"></span>
+                                <span class="header__btn-line"></span>
+                                <span class="header__btn-line"></span>
+                            </button>
+                            <a href="#" class="header__logo"><img src="images/logo.png" alt="Logo" class="header__logo-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__sub">Settings</div>
+    </header>
+
+    <main class="content">
+        <div class="content__group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="profile">
+                            <div class="profile__info">
+                                <div class="profile__info-img" style="background-image: url('images/profile-placeholder.png');">&nbsp;</div>
+                                <div class="profile__info-copy">
+                                    <h2>Benjamin Clayton</h2>
+                                    <h4>Director of Design</h4>
+                                </div>
+                            </div>
+                            <div class="profile__actions">
+                                <div class="profile__actions-item order-lg-3">
+                                    <a href="#" class="profile__actions-signout"><img src="images/i-sign-out.svg" alt="Sign Out" class="profile__actions-signout-icon"></a>
+                                </div>
+                                <div class="profile__actions-item order-lg-2">
+                                    <a href="#" class="profile__actions-notifications">
+                                        <img src="images/i-notification.svg" alt="Notifications" class="profile__actions-notifications-icon">
+                                        <span class="profile__actions-notifications-dot">2</span>
+                                    </a>
+                                </div>
+                                <div class="profile__actions-item order-lg-1">
+                                    <p class="u-color-gray-alt"><a href="mailto:ben@kisslabs.co.nz">ben@kisslabs.co.nz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__group content__group--main">
+            <div class="container">
+                <div class="row u-margin-bottom-med">
+                    <div class="col-12">
+                        <h1 class="u-color-primary">Settings</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-7 col-xl-5">
+                        <form action="#" class="form">
+                            <div class="form__group">
+                                <label for="current-password">Current Password</label>
+                                <input type="password" id="current-password">
+                            </div>
+                            <div class="form__group">
+                                <label for="new-password">New Password</label>
+                                <input type="password" id="new-password">
+                            </div>
+                            <div class="form__group u-margin-bottom-med-2">
+                                <label for="confirm-new-password">Confirm new Password</label>
+                                <input type="password" id="confirm-new-password">
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <footer class="footer">
+                            <a href="#" class="btn">Cancel</a>
+                            <a href="#" class="btn btn--primary">SAVE CHANGES</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <nav class="sidebar__nav">
+            <div class="sidebar__nav-main">
+                <button class="sidebar__nav-btn">
+                    <div class="sidebar__nav-btn-lines">
+                        <span class="sidebar__nav-btn-line"></span>
+                        <span class="sidebar__nav-btn-line"></span>
+                        <span class="sidebar__nav-btn-line"></span>
+                    </div>
+                </button>
+                <a href="#" class="sidebar__nav-item">
+                    <img src="images/i-search.svg" alt="Search" class="sidebar__nav-item-icon">
+                </a>
+                <a href="#" class="sidebar__nav-item sidebar__nav-item--active">
+                    <img src="images/i-dashboard.svg" alt="Dashboard" class="sidebar__nav-item-icon">
+                </a>
+                <a href="#" class="sidebar__nav-item">
+                    <img src="images/i-chat.svg" alt="Chat" class="sidebar__nav-item-icon">
+                </a>
+            </div>
+            <div class="sidebar__nav-sub">
+                <a href="#" class="sidebar__nav-sub-link">Settings</a>
+                <a href="#" class="sidebar__nav-sub-link">Help</a>
+            </div>
+        </nav>
+        <div class="sidebar__menu sidebar__menu--hidden">
+            <a href="#" class="sidebar__menu-logo"><img src="images/logo.png" alt="Logo" class="sidebar__menu-logo-img"></a>
+            <ul class="sidebar__menu-list">
+                <li class="sidebar__menu-item sidebar__menu-item--active">
+                    <a href="#" class="sidebar__menu-link">Dashboard</a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Update Details</a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Add Skills <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Add Police Check <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Add References <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/app-dist.js"></script>
+
+</body>
+
+</html>

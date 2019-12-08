@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENEI</title>
+    <link rel="shortcut icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__content">
+                            <button class="header__btn">
+                                <span class="header__btn-line"></span>
+                                <span class="header__btn-line"></span>
+                                <span class="header__btn-line"></span>
+                            </button>
+                            <a href="#" class="header__logo"><img src="images/logo.png" alt="Logo" class="header__logo-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__sub">Update details</div>
+    </header>
+
+    <main class="content tabs add--police-check">
+        <div class="content__group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="profile profile--nav">
+                            <div class="profile__info">
+                                <div class="profile__info-img" style="background-image: url('images/profile-placeholder.png');">&nbsp;</div>
+                                <div class="profile__info-copy">
+                                    <h2>Benjamin Clayton</h2>
+                                    <h4>Director of Design</h4>
+                                </div>
+                            </div>
+                            <div class="profile__actions">
+                                <div class="profile__actions-item order-lg-3">
+                                    <a href="#" class="profile__actions-signout"><img src="images/i-sign-out.svg" alt="Sign Out" class="profile__actions-signout-icon"></a>
+                                </div>
+                                <div class="profile__actions-item order-lg-2">
+                                    <a href="#" class="profile__actions-notifications">
+                                        <img src="images/i-notification.svg" alt="Notifications" class="profile__actions-notifications-icon">
+                                        <span class="profile__actions-notifications-dot">2</span>
+                                    </a>
+                                </div>
+                                <div class="profile__actions-item order-lg-1">
+                                    <p class="u-color-gray-alt"><a href="mailto:ben@kisslabs.co.nz">ben@kisslabs.co.nz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__group content__group--main u-margin-bottom-huge">
+            <div class="container">
+                <div class="row align-items-center u-margin-bottom-med">
+                    <div class="col-12">
+                        <h1 class="u-color-primary">Please enter the details of the job offer</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9">
+                        <div class="tabs__content-item-group tabs__content-item-group--divided d-flex justify-content-between align-items-end justify-content-xl-start">
+                            <div class="tabs__content-item-group-division tabs__content-item-group-division--small col-9 col-xl-6">
+                                <label>Role</label>
+                                <div class="dropdown">
+                                    <div class="dropdown__input">
+                                        <span class="dropdown__input-value" data-placeholder="Tester">Tester</span>
+                                    </div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__list-item">Item 1</li>
+                                        <li class="dropdown__list-item">Item 2</li>
+                                        <li class="dropdown__list-item">Item 3</li>
+                                        <li class="dropdown__list-item">Item 4</li>
+                                        <li class="dropdown__list-item">Item 5</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item-group-division tabs__content-item-group-division--small col-auto u-margin-top-null">
+                                <div class="checkbox checkbox--alt checkbox--vertical">
+                                    <input type="checkbox" id="full-time" checked>
+                                    <label class="u-color-dark-2" for="full-time">Full time</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item-group tabs__content-item-group--divided tabs__content-item-group--inner">
+                            <div class="tabs__content-item-group-division tabs__content-item-group-division--small">
+                                <h3 class="u-margin-bottom-smaller">Contract details</h3>
+                                <div class="calendar">
+                                    <div class="calendar__picker">
+                                        <label>Start date</label>
+                                        <input type="text" class="datepicker">
+                                    </div>
+                                    <div class="calendar__picker">
+                                        <label>End date</label>
+                                        <input type="text" class="datepicker">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item-group-division tabs__content-item-group-division--small">
+                                <div class="tabs__content-item-group-limit">
+                                    <label>Remuneration</label>
+                                    <input type="text" value="$100,000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item-group tabs__content-item-group--inner">
+                            <p class="paragraph--small u-font-bld u-margin-bottom-smallest">Upload contract</p>
+                            <div class="add__controls-btns add__controls-btns--file add__controls-btns--file-alt" data-add-initial-controls>
+                                <input type="file" id="file">
+                                <h4><img src="images/i-tick.svg" alt="Tick"><span>No file selected</span></h4>
+                                <label for="file" class="btn btn--primary btn--primary-ghost">CHOOSE FILE</label>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item-group tabs__content-item-group--inner">
+                            <div class="tabs__content-item-group-limit">
+                                <label>Set offer expiry</label>
+                                <div class="dropdown">
+                                    <div class="dropdown__input">
+                                        <span class="dropdown__input-value" data-placeholder="7 days">7 days</span>
+                                    </div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__list-item">1 day</li>
+                                        <li class="dropdown__list-item">2 days</li>
+                                        <li class="dropdown__list-item">3 days</li>
+                                        <li class="dropdown__list-item">4 days</li>
+                                        <li class="dropdown__list-item">5 days</li>
+                                        <li class="dropdown__list-item">6 days</li>
+                                        <li class="dropdown__list-item">7 days</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <footer class="footer">
+                            <a href="#" class="btn">Cancel</a>
+                            <a href="#" class="btn btn--primary">SAVE JOB</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <nav class="sidebar__nav">
+            <div class="sidebar__nav-main">
+                <button class="sidebar__nav-btn">
+                    <div class="sidebar__nav-btn-lines">
+                        <span class="sidebar__nav-btn-line"></span>
+                        <span class="sidebar__nav-btn-line"></span>
+                        <span class="sidebar__nav-btn-line"></span>
+                    </div>
+                </button>
+                <a href="#" class="sidebar__nav-item">
+                    <img src="images/i-search.svg" alt="Search" class="sidebar__nav-item-icon">
+                </a>
+                <a href="#" class="sidebar__nav-item sidebar__nav-item--active">
+                    <img src="images/i-dashboard.svg" alt="Dashboard" class="sidebar__nav-item-icon">
+                </a>
+                <a href="#" class="sidebar__nav-item">
+                    <img src="images/i-chat.svg" alt="Chat" class="sidebar__nav-item-icon">
+                </a>
+            </div>
+            <div class="sidebar__nav-sub">
+                <a href="#" class="sidebar__nav-sub-link">Settings</a>
+                <a href="#" class="sidebar__nav-sub-link">Help</a>
+            </div>
+        </nav>
+        <div class="sidebar__menu sidebar__menu--hidden">
+            <a href="#" class="sidebar__menu-logo"><img src="images/logo.png" alt="Logo" class="sidebar__menu-logo-img"></a>
+            <ul class="sidebar__menu-list">
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Dashboard</a>
+                </li>
+                <li class="sidebar__menu-item sidebar__menu-item--active">
+                    <a href="#" class="sidebar__menu-link">Update Details</a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Add Skills <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Add Police Check <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#" class="sidebar__menu-link">Add References <img src="images/i-attention.svg" alt="Attention icon" class="sidebar__menu-icon"></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/vendors/jquery-ui.min.js"></script>
+    <script src="js/app-dist.js"></script>
+
+</body>
+
+</html>

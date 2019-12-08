@@ -1,0 +1,53 @@
+.search-section {
+    background-color: $color-gray-alt-5;
+    padding: 3.333rem 0;
+    margin-top: 4.8333rem;
+    @include atSmall {
+        margin-top: 64.69px;
+    }
+    @include atMedium {
+        margin-top: 9rem;
+        padding: 2.5rem 0;
+    }
+    @include atLarge {
+        margin-top: 11.25rem;
+    }
+
+    &__label {
+        color: rgba($color-white, .76);
+        margin-bottom: 2.125rem;
+    }
+
+    &__main {
+        margin-bottom: 2rem;
+        @include atMedium {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+    }
+
+    &__input {
+        border: 0;
+        border-bottom: 1px solid $color-primary;
+        font-family: $font-reg;
+        font-size: 1.75rem;
+        color: $color-primary;
+        background: transparent;
+        margin-bottom: 1.333rem;
+        padding: 0 0 1rem 0;
+        @include atMedium {
+            margin-bottom: 0;
+            padding-bottom: .75rem;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        @include atMedium {
+            width: auto;
+            min-width: 11.25rem;
+            margin-left: 1.5rem;
+        }
+    }
+}

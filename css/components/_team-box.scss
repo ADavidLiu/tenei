@@ -1,0 +1,42 @@
+.team-boxes {
+    margin-bottom: 10px;
+    @include atMedium {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.team-box {
+    margin-bottom: 6.25rem;
+    @include atMedium {
+        margin-bottom: 5.3125rem;
+        max-width: 20.3125rem;
+    }
+
+    &__img {
+        border-radius: 50%;
+        background-color: rgba($color-gray-alt-3, .05);
+        height: 14.833rem;
+        width: 14.833rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @include atMedium {
+            height: 11.125rem;
+            width: 11.125rem;
+        }
+    }
+
+    &__header {
+        margin: 1.667rem 0 .667rem 0;
+        @include atMedium {
+            margin: 1.5rem 0 .5rem 0;
+        }
+    }
+
+    &__name {
+        display: block;
+        @include atMedium {
+            display: inline;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="18px" viewBox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="download-hover/active" fill="#DEAA22">
+            <g id="Group">
+                <path d="M19.0136719,10 L19.0136719,16.0151978 L2.00970459,16.0151978 L2.00970459,10 L-1.77635684e-15,10 L-1.77635684e-15,16.5196358 C-1.77635684e-15,17.3370735 0.620711059,18 1.39039277,18 L19.6096072,18 C20.3785993,18 21,17.3378093 21,16.5196358 L21,10 L19.0136719,10 Z" id="Shape-Copy-5" fill-rule="nonzero" transform="translate(10.500000, 14.000000) rotate(-360.000000) translate(-10.500000, -14.000000) "></path>
+                <path d="M14.2121709,9.64356685 L8.17769864,15.2331868 C7.79383331,15.5889377 7.17146149,15.5889377 6.78778252,15.2331868 C6.40407249,14.8777523 6.40407249,14.3012718 6.78778252,13.9458661 L12.1273588,8.99990649 L6.78793782,4.05411954 C6.40422779,3.69854121 6.40422779,3.12211822 6.78793782,2.76668374 C7.17164785,2.41110542 7.79398861,2.41110542 8.17785394,2.76668374 L14.2123262,8.35638999 C14.4041812,8.53419354 14.5,8.76697809 14.5,8.99987772 C14.5,9.23289244 14.4039948,9.46584961 14.2121709,9.64356685 Z" id="Shape" fill-rule="nonzero" transform="translate(10.500000, 9.000000) rotate(-990.000000) translate(-10.500000, -9.000000) "></path>
+                <rect id="Rectangle" transform="translate(10.500000, 6.000000) rotate(-720.000000) translate(-10.500000, -6.000000) " x="9.5" y="0.5" width="2" height="11" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

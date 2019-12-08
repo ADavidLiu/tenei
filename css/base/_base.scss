@@ -1,0 +1,131 @@
+html,
+body {
+    overflow-x: hidden;
+    font-size: 12px;
+    @include atSmall {
+        font-size: 14px;
+    }
+    @include atMedium {
+        font-size: 15px;
+    }
+    @include atLarge {
+        font-size: 16px;
+    }
+}
+
+body {
+    min-height: 100vh;
+    @include atMedium {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul,
+ol,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    @extend .heading-primary;
+}
+
+h2 {
+    @extend .heading-secondary;
+}
+
+h3 {
+    @extend .heading-tertiary;
+}
+
+h4 {
+    @extend .heading-quaternary;
+}
+
+h5 {
+    @extend .heading-quinary;
+}
+
+h6 {
+    @extend .heading-senary;
+}
+
+li,
+p {
+    @extend .paragraph;
+}
+
+li {
+    @extend .paragraph--small;
+}
+
+a {
+    transition: all .25s;
+    @include linkStates(inherit, none);
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    &.underline {
+        @include linkStates(inherit, underline);
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    padding-left: 2rem;
+    @include atMedium {
+        padding-left: 1rem;
+    }
+
+    &.u-dir-rtl {
+        padding-left: 0;
+        padding-right: 2rem;
+        @include atMedium {
+            padding-right: 1rem;
+        }
+    }
+
+    &.u-dir-md-ltr {
+        @include atMedium {
+            padding-left: 1rem;
+            padding-right: 0;
+        }
+    }
+}
+
+input,
+button,
+select {
+    border: none;
+
+    &:focus {
+        outline: none !important;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}

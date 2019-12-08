@@ -1,0 +1,12 @@
+.quote {
+    border-left: 4px solid $color-primary;
+    padding-left: 1.833rem;
+    margin-bottom: 0;
+    @include atMedium {
+        padding-left: 1.375rem;
+    }
+
+    &__text {
+        font-style: italic;
+    }
+}
